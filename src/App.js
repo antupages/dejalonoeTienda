@@ -13,6 +13,8 @@ function App() {
     <div className="App">
       
      <Navbar/>
+
+     <p> aqui se ejecutara la pagina de la tiene de DJNⓇ</p>
   
     </div>
   );
