@@ -36,3 +36,105 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+/* mi css a probar */
+
+
+p, H2 {
+  display: inline-block;
+  align-items: center;
+  padding: 5px;
+  color: #336aad; }
+
+H2 {
+  text-transform: uppercase; }
+
+/*GENERAL*/
+body {
+  font-family: Helvetica, sans-serif;
+  background: #191919 !important;
+  align-self: center;
+  height: 100%; }
+
+Li {
+  display: inline-block;
+  text-transform: uppercase; }
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ea80be; }
+
+a {
+  color: #336aad !important; }
+
+H2 {
+  color: #336aad;
+  text-transform: uppercase; }
+
+label {
+  display: inline-block;
+  width: 70px;
+  color: #336aad;
+  text-transform: uppercase; }
+
+input {
+  color: #336aad; }
+
+footer {
+  background: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  left: 0px; }
+
+h3 {
+  padding: 1rem; }
+
+h2 {
+  padding: 1rem; }
+
+main {
+  padding: 5px; }
+
+button {
+  background-color: #191919;
+  color: #336aad;
+  border-color: #191919;
+  font-size: 15px; }
+
+pre {
+  font-size: 15px;
+  text-align: left;
+  display: inline-block;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #336aad; }
+
+.top {
+  display: inline-flex; }
+
+.logo {
+  width: 6rem; }
+
+.mynavbar {
+  background: #191919 !important; }
+
+.noVisible_pc {
+  display: none; }
+
+.Visible_cel {
+  display: flex; }
+
+@media screen and (min-width: 768px) {
+  .Visible_cel {
+    display: none; }
+  .noVisible_pc {
+    display: flex; } }

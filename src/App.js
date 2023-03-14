@@ -1,25 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './componentes/navbar/navbar';
+import Botonnav from "./componentes/navbar/botonnav.js"
+//import Clase from "./componentes/clase.js";
+//import Funcional from "../src/componentes/funcional.js"
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+     <Navbar/>
+  
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+/*    
+
+
+
+<Funcional/>
+      
+      <Navbar>
+        <Botonnav nombre="remera"/>  
+        <Botonnav nombre="basos"/>  
+        <Botonnav nombre="stikers"/>   
+      </Navbar> 
+      
+      
+      
+      */
