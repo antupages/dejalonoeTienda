@@ -68,8 +68,9 @@ h1 {
   text-align: center;
   color: #ea80be; }
 
-a {
-  color: #336aad !important; }
+Link {
+  color: #336aad !important; 
+  margin-right: 4px; }
 
 H2 {
   color: #336aad;
@@ -138,3 +139,36 @@ pre {
     display: none; }
   .noVisible_pc {
     display: flex; } }
+
+/*MERCH*/
+.mainmerch {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px; }
+  .mainmerch div {
+    display: inline-block;
+    border-style: groove;
+    border-color: #336aad; }
+    .mainmerch div img {
+      display: inline-block;
+      width: 100%;
+      justify-items: center; }
+    .mainmerch div p, .mainmerch div H2 {
+      display: inline-block;
+      align-items: center;
+      padding: 5px;
+      padding-top: 25px; }
+      
+      
+      @media screen and (min-width: 768px) {
+        /*tablet*/
+        .mainmerch {
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 10px; } }
+      
+      @media screen and (min-width: 1000px) {
+        /*pc*/
+        .mainmerch {
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-column-gap: 10px; } }
+/*@media screen and (min-width: 768px) */
