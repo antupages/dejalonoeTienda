@@ -1,0 +1,94 @@
+{
+    "productos":[
+        {   "id": 1,
+            "nombre": "remera",
+            "detalle": "remera [1]",
+            "img": "#",
+            "alt": "alt remera 1"
+        },
+        {   "id": 2,
+            "nombre": "remera",
+            "detalle": "remera [2]",
+            "img": "#",
+            "alt": "alt remera 2"
+        },
+        {  "id": 3,
+            "nombre": "remera",
+            "detalle": "remera [3]",
+            "img": "#",
+            "alt": "alt remera 3"
+        },
+        {   "id": 4,
+            "nombre": "calcomanias",
+            "detalle": "set de calcomanias de la banda 1",
+            "img": "#",
+            "alt": "set de calcomanias de la banda"
+        },
+        {   "id": 5,
+            "nombre": "calcomanias",
+            "detalle": "set de calcomanias de la banda 2",
+            "img": "#",
+            "alt": "set de calcomanias de la banda"
+        },
+        {   "id": 6,
+            "nombre": "vaso",
+            "detalle": "vaso1",
+            "img": "#",
+            "alt": "vaso1"
+        },
+        {   "id": 7,
+            "nombre": "vaso",
+            "detalle": "vaso2",
+            "img": "#",
+            "alt": "vaso2"
+        },
+        {   "id": 8,
+            "nombre": "vaso",
+            "detalle": "vaso3",
+            "img": "#",
+            "alt": "vaso1"
+        },
+        {   "id": 9,
+            "nombre": "vaso",
+            "detalle": "vaso4",
+            "img": "#",
+            "alt": "vaso1"
+        },
+        {   "id": 10,
+            "nombre": "vaso",
+            "detalle": "vaso5",
+            "img": "#",
+            "alt": "vaso5"
+        },
+        {   "id": 11,
+            "nombre": "remera",
+            "detalle": "Remera[4]",
+            "img": "#",
+            "alt": "Remera[4]"
+        },
+        {   "id": 12,
+            "nombre": "Remera",
+            "detalle": "Remera[4]",
+            "img": "#",
+            "alt": "Remera[4]"
+        },
+        {   "id": 13,
+            "nombre": "Remera",
+            "detalle": "Remera[4]",
+            "img": "#",
+            "alt": "Remera[4]"
+        },
+        {   "id": 14,
+            "nombre": "Remera",
+            "detalle": "Remera[4]",
+            "img": "#",
+            "alt": "Remera"
+        },
+        {   "id": 15,
+            "nombre": "Remera",
+            "detalle": "Remera[4]",
+            "img": "#",
+            "alt": "Remera[4]"
+        }
+    ]
+}

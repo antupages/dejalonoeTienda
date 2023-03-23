@@ -1,0 +1,12 @@
+para que la pag funcione hay que usar Json-server para montar un servidor para el json 
+
+para hacer esto usando nodeJS se usan los comandos 
+
+npm install -g json-server
+
+una vez que ese instalado hay que usar el comando 
+
+json-server --watch merch.json
+
+
+de esta manera se puede acceder al json local como si fuera un json de una api 
