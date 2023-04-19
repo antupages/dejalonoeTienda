@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import ProductoCatalogo from '../componentes/productoCatalogo.js';
+import ProductoCatalogo from './productoCatalogo.js';
  
 const Catalogo=(producto)=> {
 

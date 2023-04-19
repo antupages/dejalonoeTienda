@@ -1,9 +1,11 @@
 import './App.css';
 import { BrowserRouter, Routes , Route } from 'react-router-dom';
-import NavBar from './componentes/navbar/navbar';
-import ItemListContainer from "./ItemListContainer"
-import ItemDetailContainer from "./ItemDetailContainer"
+import NavBar from './componentes/navbar';
+import ItemListContainer from "./componentes/ItemListContainer"
+import ItemDetailContainer from "./componentes/ItemDetailContainer"
+import Cart from "./componentes/Cart";
 import Error from "./error";
+
 
 function App() {
   return (
@@ -12,8 +14,9 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path="/" exact element={<ItemListContainer/>}/>
-          <Route path="/category/:id" exact element={<ItemListContainer/>}/>
-          <Route path="/item/:id" exact element={<ItemDetailContainer/>}/>
+          <Route path="/category/:categoryid" exact element={<ItemListContainer/>}/>
+          <Route path="/item/:categoryid" exact element={<ItemDetailContainer/>}/>
+          <Route path='/cart' element={<Cart/>}/>
           <Route path="*" exact element={<Error/>}/>
         </Routes>   
       </BrowserRouter> 
@@ -21,3 +24,11 @@ function App() {
   );
 }
 export default App;
+
+
+/*
+
+ 
+      <Route path='/cart' element={<Cart/>}/>
+ 
+*/

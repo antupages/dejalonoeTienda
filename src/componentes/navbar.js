@@ -1,10 +1,8 @@
 import React, {useState} from "react";
 import {Routes, Route, Link } from "react-router-dom";
-import Carrito from "../carrito";
+import Carrito from "./Carrito.js"
 
 function Navbar (){
-
-  
 
   return (
     <div>
@@ -26,7 +24,7 @@ function Navbar (){
                   <Link to={"category/vasos"} className="nav-Link btn btn-danger" href="#">vasos</Link>
                   </li>
                   <li className="nav-item">
-                  <Link to={"category/Calcomania"} className="nav-Link btn btn-danger" href="#">Calcomania</Link>
+                  <Link to={"category/calcomania"} className="nav-Link btn btn-danger" href="#">Calcomania</Link>
                   </li>
                 </ul> 
               </div>
