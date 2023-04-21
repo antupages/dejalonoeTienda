@@ -12,6 +12,7 @@ function ItemListContainer() {
   useEffect(()=>{
     const queryDb = getFirestore();
     const queryColection = collection(queryDb, "items");
+    
     if(categoryid){
       const queryFilter = query(queryColection, where("CategoryID", "==", categoryid))
       getDocs(queryFilter)
@@ -23,48 +24,7 @@ function ItemListContainer() {
     }, [categoryid])
   
   
-  return (
-      <ItemList data={data}/>
-  )
+  return ( <ItemList data={data}/> )
 };
 
 export default ItemListContainer;
-
-
-/*  
-
-  const getProducts =  async ()=>{
-    try{
-      const querySnapshot = await getDocs(collection(db, "items"))
-      const docs = []
-      querySnapshot.forEach((doc)=>{
-        docs.push({...doc.data(), id:doc.id})
-      })
-      setProducts(docs)
-    }catch(error){
-        console.log(error)
-    }
-  }
-  getProducts()
-  }, [product])
-
-
-
------------------------
-
-<div className='container card'>
-      <div className='card-body'>
-        {product.map(p =>(
-          <div key={p.id}>
-            <p>title: {p.title}</p>
-            <p>description: {p.description}</p>
-            <p>precio: {p.price}</p>
-            <p>stock: {p.stock}</p>
-            <p>CategoryID: {p.CategoryID}</p>
-            <img src={p.img} alt={p.alt}/>
-          </div>
-        ))}
-      </div>
-    </div>
-
-  */

@@ -4,18 +4,18 @@ import  {useCartContext}  from './CartContext'
 
 function Item({info}) {
 
- const nombre = useContext(useCartContext);
+ //const nombre = useContext(useCartContext);
 
   return (
     <div>
-      <Link to={`/ItemDetail/${info.id}`} className='producto'>
-        <p>{info.title} </p>
-        <br/> 
+     <Link to={`/item/${info.id}`} className='producto'>
         <img src={info.img} width='300px' height='300px' alt='imgitem'/>
-      </Link>
-      
-      
+     </Link>
+    <p>{info.title} </p>
+    <br/> 
     </div>
+    
+
   )
 }
 

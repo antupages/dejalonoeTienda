@@ -1,15 +1,20 @@
+import React from 'react';
 import {useState} from 'react'
 
 function ItemCount({stock,initial, onAdd}) {
     const[counter, setCounter] = useState(initial)
 
     const restar=()=>{
+      if(counter > 1){
         setCounter(counter - 1);
-    }
-    const sumar=()=>{
-        setCounter(counter + 1);
-    }
+      }
+    };
 
+    const sumar=()=>{
+      if(counter < stock){
+        setCounter(counter + 1);
+      }
+    };
 
 
   return (

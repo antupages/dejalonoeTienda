@@ -1,32 +1,59 @@
-import React from 'react';
+import {useState, useEffect} from 'react'
+import ItemDetail from './ItemDetail'
+import { useParams } from 'react-router-dom';
+import {getFirestore, doc, getDoc} from 'firebase/firestore';
+
+function ItemDetailContainer() {
+
+    const[data,setData]= useState('');
+    const{detalleId}  = useParams();
+
+    useEffect(()=>{
+     const queryDb = getFirestore();
+     const queryDoc = doc(queryDb, 'products', detalleId);
+     getDoc(queryDoc)
+     .then(res=>setData({id: res.id, ...res.data()}))
+      },[detalleId])
+
+    
+
+  return (
+    <div>
+        <ItemDetail data ={data} />
+    </div>
+  )
+}
+
+export default ItemDetailContainer
+
+
+
+
+
+
+
+/*import React from 'react';
 import {useState, useEffect} from "react";
 import {useParams} from "react-router-dom";
-import {db} from "./firebase/firebase"
-import { collection, getDocs } from 'firebase/firestore';
-import { getFirestore, doc, getDoc } from 'firebase/firestore';
-import ItemList from './ItemList';
+import { getProdcto } from 'firebase/firestore';
 import ItemDetail from "./ItemDetail.js";
 
 
 function ItemListContainer() {
-  
-  const [product, setData] = useState([]);
-  const [detalleId] = useParams();
+ 
+  const [data, setData] = useState([]);
+  const {id} = useParams();
 
   
   useEffect(()=>{
-    const queryDb = getFirestore();
-    const queryDoc = doc(queryDb, "items", detalleId);
-    getDoc(queryDoc)
-    .then(res=>setData({id: res.id, ...res.data()}))
-
-  }, [detalleId])
+    getProdcto(id).then(prod => setData(prod))
+  }, [])
   
   
   return (
 
         <div>
-          <ItemDetail data={product}/>
+          <ItemDetail data={data}/>
         </div>
 
 
@@ -36,20 +63,4 @@ function ItemListContainer() {
 
 export default ItemListContainer;
 
-
-
-
-/*import React from 'react'
-import ProductoCatalogo from "./productoCatalogo.js"
-function ItemDetailContainer() {
-  return (
-    <div>
-
-      <ProductoCatalogo/>
-      <button>sumar al carro</button>
-
-    </div>
-  )
-}
-
-export default ItemDetailContainer*/
+*/

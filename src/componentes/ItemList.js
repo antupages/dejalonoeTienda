@@ -5,10 +5,13 @@ import Item from './Item'
 function ItemList({data=[]}) {
   return (
   
-      data.map(p=> <Item key={p.id} info={p} />)
+      data.map(p=> 
+        <div className='col-md-3' key={data.id}>
+          <Item key={data.id} info={data} />
+        </div>
+      )
       
   )
 }
 
 export default ItemList
-

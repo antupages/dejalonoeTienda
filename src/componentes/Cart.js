@@ -9,10 +9,10 @@ function Cart() {
 
   const order={
     buyer:{
-      name:'Cosme Fulanito',
-      email:'cosmefulanito@gmail.com',
-      phone:'12345678',
-      address: 'calle falsa 123'
+      name:'Hola Chau',
+      email:'prueba@1.com',
+      phone:'1234567890',
+      address: 'hola hola 1234'
     },
     items: cart.map(p=>({id: p.id, title: p.title, price: p.price, quantity: p.quantity})),
     total: totalPrice(),
